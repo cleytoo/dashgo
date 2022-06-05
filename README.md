@@ -4,7 +4,7 @@
     <br>
     <br>
     <p>
-       Aplicação desenvolvida no curso ignite
+       Aplicação desenvolvida com propósito de estudos
     </p>
 </h1>
 
