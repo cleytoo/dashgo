@@ -11,7 +11,7 @@ export const Profile = ({
         <Box mr="4" textAlign="right">
           <Text>Cleyton vinicius</Text>
           <Text color="gray.300" fontSize={'sm'}>
-            Cleytonterceiro@outlook.com
+            cleyton@dev.com
           </Text>
         </Box>
       )}

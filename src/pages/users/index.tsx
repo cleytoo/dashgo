@@ -73,7 +73,7 @@ export default function UserList() {
                   <Box>
                     <Text fontWeight="bold">Cleyton vinicius</Text>
                     <Text fontSize="sm" color="gray.300">
-                      cleytonterceiro@outlook.com
+                      cleyton@dev.com
                     </Text>
                   </Box>
                 </Td>
@@ -99,9 +99,9 @@ export default function UserList() {
                 </Td>
                 <Td>
                   <Box>
-                    <Text fontWeight="bold">Cleyton vinicius</Text>
+                    <Text fontWeight="bold">Vinicius costa</Text>
                     <Text fontSize="sm" color="gray.300">
-                      cleytonterceiro@outlook.com
+                      vinicius@dev.com
                     </Text>
                   </Box>
                 </Td>
@@ -127,9 +127,9 @@ export default function UserList() {
                 </Td>
                 <Td>
                   <Box>
-                    <Text fontWeight="bold">Cleyton vinicius</Text>
+                    <Text fontWeight="bold">geremias</Text>
                     <Text fontSize="sm" color="gray.300">
-                      cleytonterceiro@outlook.com
+                      Geremias@outlook.com
                     </Text>
                   </Box>
                 </Td>
