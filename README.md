@@ -3,9 +3,6 @@
     <img alt="DashGo App" src="dashgo.png" />
     <br>
     <br>
-    <p>
-       Aplicação desenvolvida com propósito de estudos
-    </p>
 </h1>
 
   <br>
