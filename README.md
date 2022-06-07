@@ -13,8 +13,6 @@
 
 ## ✨ Tecnologias
 
-Esse projeto foi desenvolvido em:
-
 - [NextJS](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org)
 - [Chakra UI](https://chakra-ui.com/)
