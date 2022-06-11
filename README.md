@@ -20,4 +20,4 @@
 - [Yup](https://github.com/jquense/yup)
 - [MirageJs](https://miragejs.com/)
 - [FakerJs](https://fakerjs.dev/)
-- [Axios](https://axios-http.com/))
+- [Axios](https://axios-http.com/)
