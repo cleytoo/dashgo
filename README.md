@@ -3,9 +3,6 @@
     <img alt="DashGo App" src="dashgo.png" />
     <br>
     <br>
-    <p>
-       Aplicação desenvolvida no curso ignite
-    </p>
 </h1>
 
   <br>
@@ -15,8 +12,6 @@
 <br>
 
 ## ✨ Tecnologias
-
-Esse projeto foi desenvolvido em:
 
 - [NextJS](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org)
