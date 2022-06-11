@@ -16,6 +16,10 @@ import { Sidebar } from '../../../components/Sidebar'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import { useMutation } from 'react-query'
+import { api } from '../../../services/api'
+import { queryClient } from '../../../services/queryClient'
+import { useRouter } from 'next/router'
 
 interface User {
   name: string
@@ -37,6 +41,8 @@ const schema = yup.object().shape({
 })
 
 export default function CreateUser() {
+  const router = useRouter()
+
   const {
     register,
     handleSubmit,
@@ -46,10 +52,28 @@ export default function CreateUser() {
     resolver: yupResolver(schema),
   })
 
-  const createUser: SubmitHandler<User> = async (data) => {
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+  const createUser = useMutation(
+    async (user: User) => {
+      const { data } = await api.post('users', {
+        user: {
+          ...user,
+          created_at: new Date(),
+        },
+      })
 
-    console.log(data)
+      return data.user
+    },
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries('users')
+      },
+    }
+  )
+
+  const handleCreateUser: SubmitHandler<User> = async (data) => {
+    await createUser.mutateAsync(data)
+
+    router.push('/users')
   }
 
   return (
@@ -61,7 +85,7 @@ export default function CreateUser() {
 
         <Box
           as="form"
-          onSubmit={handleSubmit(createUser)}
+          onSubmit={handleSubmit(handleCreateUser)}
           flex="1"
           borderRadius={8}
           bg="gray.800"

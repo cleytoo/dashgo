@@ -23,3 +23,6 @@ Esse projeto foi desenvolvido em:
 - [Chakra UI](https://chakra-ui.com/)
 - [React hook form](https://react-hook-form.com/)
 - [Yup](https://github.com/jquense/yup)
+- [MirageJs](https://miragejs.com/)
+- [FakerJs](https://fakerjs.dev/)
+- [Axios](https://axios-http.com/))
